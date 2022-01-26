@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p id="kali"></p>
+  <p id="tambah"></p>
+  <p id="bagi"></p>
+  <p id="kurang"></p>
+  <p id="object"></p>
+  <p id="arrays"></p>
+  <p id="coba"></p>
+  <script>
+    // SOAL 1
+    // membuat fungsi
+
+    function Sania() {
+      console.log("Hello nama saya Sania!");
+    }
+    // memanggil fungsi
+    Sania();
+    // maka akan menghasilkan -> Helow World!
+
+
+    // SOAL 2
+    function myFunction(p1, p2) {
+      return p1 * p2;
+    }
+    document.getElementById("kali").innerHTML = myFunction(4, 3);
+
+    function san(p1, p2) {
+      return p1 + p2;
+    }
+    document.getElementById("tambah").innerHTML = san(5, 2);
+
+    function nia(p5, p6) {
+      return p5 / p6;
+    }
+    document.getElementById("bagi").innerHTML = nia(50, 5);
+
+    function dep(p7, p8) {
+      return p7 - p8;
+    }
+    document.getElementById("kurang").innerHTML = dep(70, 7);
+
+    // SOAL 3
+
+    var san = {
+      firstName: "Sania",
+      lastName: "Devi",
+      age: 15,
+      address: "Ungaran"
+    };
+    document.getElementById("object").innerHTML =
+      "My Name is " + san.firstName + " Iam " + san.age + " years old " + "My Address is " + san.address;
+
+    //SOAL 4
+    // ke-1
+
+    const cars = ["SSD", "CPU", "RAM", "Monitor", "Printer", "Hard Disk", "Mouse", "Keyboard", "Scanner", "Motherboard"];
+
+    let text = "";
+    for (let i = 0; i < cars.length; i++) {
+      text += cars[i] + "<br>";
+    }
+
+    document.getElementById("arrays").innerHTML = text;
+    // ke-2
+
+    const coba = ["SSD", "CPU", "RAM", "Monitor", "Printer", "Hard Disk", "Mouse", "Keyboard", "Scanner", "Motherboard"];
+
+    document.write("<ol>")
+    // menggunakan perulangan untuk mencetak semua isi array
+    for (let i = 0; i < coba.length; i++) {
+      document.write(`<li>${coba[i]} </li>`)
+    }
+
+    document.write("</ol>")
+
+
+  </script>
+</body>
+
+</html>
